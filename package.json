@@ -1,0 +1,15 @@
+{
+  "name": "cursor_to_notion",
+  "version": "1.0.0",
+  "description": "このツールは、ローカルのMarkdownファイルとNotionページを双方向で同期し、Git風のワークフローでコラボレーションを可能にします。",
+  "main": "node_upload_media.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^5.1.0"
+  }
+}

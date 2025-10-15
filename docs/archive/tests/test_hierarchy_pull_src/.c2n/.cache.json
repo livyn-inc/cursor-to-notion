@@ -1,0 +1,79 @@
+{
+  "parent_url": "https://www.notion.so/explaza/Palma-263b133701be8088a184d31e9cccb008",
+  "ignore_patterns": [
+    "**/__pycache__",
+    "**/__pycache__/**",
+    "**/*.drawio.md"
+  ],
+  "probe": {
+    "config_path": "/Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_pull_src/.c2n/config.json",
+    "config_mtime": 1759171765,
+    "ignore_path": "/Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_pull_src/.c2n_ignore",
+    "ignore_mtime": 1759171742,
+    "index_path": "/Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_pull_src/.c2n/index.yaml",
+    "index_mtime": 1759171742,
+    "env_chain": [
+      {
+        "path": "/Users/daisukemiyata/aipm_v3/.env",
+        "mtime": 1759117438
+      }
+    ]
+  },
+  "last_prog_total": 4,
+  "dir_snapshot": {
+    ".": {
+      "mtime_ns": 1759171742076109008,
+      "dirs": [
+        "docs"
+      ],
+      "files": []
+    },
+    "docs": {
+      "mtime_ns": 1759171742036858182,
+      "dirs": [
+        "Parent"
+      ],
+      "files": []
+    },
+    "docs/Parent": {
+      "mtime_ns": 1759171742037155850,
+      "dirs": [
+        "ChildB"
+      ],
+      "files": [
+        "ChildA.md",
+        "README.md"
+      ]
+    },
+    "docs/Parent/ChildB": {
+      "mtime_ns": 1759171742037264559,
+      "dirs": [],
+      "files": [
+        "ChildB1.md",
+        "README.md"
+      ]
+    }
+  },
+  "file_snapshot": {
+    "docs/Parent/ChildB/ChildB1.md": {
+      "mtime_ns": 1759171742037299934,
+      "size": 10,
+      "sha1": "b024a51985eec197edcb0bdbbf174cb1cdf47343"
+    },
+    "docs/Parent/ChildB/README.md": {
+      "mtime_ns": 1759171742037236767,
+      "size": 16,
+      "sha1": "e050da6c7e7fa0273d23cb49a4201d491d47a91d"
+    },
+    "docs/Parent/ChildA.md": {
+      "mtime_ns": 1759171742037182183,
+      "size": 9,
+      "sha1": "a2f52cbd98e85d603792674461cc4b51a20b228b"
+    },
+    "docs/Parent/README.md": {
+      "mtime_ns": 1759171742037122016,
+      "size": 16,
+      "sha1": "38b96bce927d276612f2ff9c7328c64c564773d5"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+generated_at: 1759171825
+ignore: []
+items:
+  /Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_pull_src:
+    page_id: 27db1337-01be-8116-a0ee-d2845cc1cf19
+    page_url: https://www.notion.so/test_hierarchy_pull_src-27db133701be8116a0eed2845cc1cf19
+    parent_url: https://www.notion.so/explaza/Palma-263b133701be8088a184d31e9cccb008
+    title: test_hierarchy_pull_src
+    type: dir
+    updated_at: 1759171772
+  /Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_pull_src/docs:
+    page_id: 27db1337-01be-8152-b445-c21ebdc7cf74
+    page_url: https://www.notion.so/docs-27db133701be8152b445c21ebdc7cf74
+    parent_url: https://www.notion.so/test_hierarchy_pull_src-27db133701be8116a0eed2845cc1cf19
+    title: docs
+    type: dir
+    updated_at: 1759171775
+  /Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_pull_src/docs/Parent:
+    page_id: 27db1337-01be-8158-8a36-e476bd8a3459
+    page_url: https://www.notion.so/Parent-27db133701be81588a36e476bd8a3459
+    parent_url: https://www.notion.so/docs-27db133701be8152b445c21ebdc7cf74
+    title: Parent
+    type: dir
+    updated_at: 1759171792
+  /Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_pull_src/docs/Parent/ChildA.md:
+    content_sha1: a2f52cbd98e85d603792674461cc4b51a20b228b
+    last_sync_at: '2025-09-29T18:50:00.000Z'
+    local_mtime: 1759171742
+    local_mtime_ns: 1759171742037182183
+    page_id: 27db1337-01be-811e-b465-ca36537a5d35
+    page_url: https://www.notion.so/ChildA-27db133701be811eb465ca36537a5d35
+    parent_url: https://www.notion.so/Parent-27db133701be81588a36e476bd8a3459
+    remote_last_edited: '2025-09-29T18:50:00.000Z'
+    title: ChildA
+    type: file
+    updated_at: 1759171817
+  /Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_pull_src/docs/Parent/ChildB:
+    page_id: 27db1337-01be-817c-a1f7-e1b28952cdd7
+    page_url: https://www.notion.so/ChildB-27db133701be817ca1f7e1b28952cdd7
+    parent_url: https://www.notion.so/Parent-27db133701be81588a36e476bd8a3459
+    title: ChildB
+    type: dir
+    updated_at: 1759171795
+  ? /Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_pull_src/docs/Parent/ChildB/ChildB1.md
+  : content_sha1: b024a51985eec197edcb0bdbbf174cb1cdf47343
+    last_sync_at: '2025-09-29T18:50:00.000Z'
+    local_mtime: 1759171742
+    local_mtime_ns: 1759171742037299934
+    page_id: 27db1337-01be-8113-95b9-fdc8093c61bb
+    page_url: https://www.notion.so/ChildB1-27db133701be811395b9fdc8093c61bb
+    parent_url: https://www.notion.so/ChildB-27db133701be817ca1f7e1b28952cdd7
+    remote_last_edited: '2025-09-29T18:50:00.000Z'
+    title: ChildB1
+    type: file
+    updated_at: 1759171805
+  ? /Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_pull_src/docs/Parent/ChildB/README.md
+  : content_sha1: e050da6c7e7fa0273d23cb49a4201d491d47a91d
+    last_sync_at: '2025-09-29T18:50:00.000Z'
+    local_mtime: 1759171742
+    local_mtime_ns: 1759171742037236767
+    page_id: 27db1337-01be-8184-b38d-d02c15397082
+    page_url: https://www.notion.so/README-27db133701be8184b38dd02c15397082
+    parent_url: https://www.notion.so/ChildB-27db133701be817ca1f7e1b28952cdd7
+    remote_last_edited: '2025-09-29T18:50:00.000Z'
+    title: README
+    type: file
+    updated_at: 1759171811
+  /Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_pull_src/docs/Parent/README.md:
+    content_sha1: 38b96bce927d276612f2ff9c7328c64c564773d5
+    last_sync_at: '2025-09-29T18:50:00.000Z'
+    local_mtime: 1759171742
+    local_mtime_ns: 1759171742037122016
+    page_id: 27db1337-01be-81f2-8013-fb11257dbcf1
+    page_url: https://www.notion.so/README-27db133701be81f28013fb11257dbcf1
+    parent_url: https://www.notion.so/Parent-27db133701be81588a36e476bd8a3459
+    remote_last_edited: '2025-09-29T18:50:00.000Z'
+    title: README
+    type: file
+    updated_at: 1759171824
+root_page_url: https://www.notion.so/test_hierarchy_pull_src-27db133701be8116a0eed2845cc1cf19
+version: 1

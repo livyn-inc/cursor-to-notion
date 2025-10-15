@@ -1,0 +1,9 @@
+{
+  "repo_create_url": "",
+  "default_parent_url": "https://www.notion.so/explaza/Palma-263b133701be8088a184d31e9cccb008",
+  "default_title_column": "名前",
+  "pull_apply_default": true,
+  "push_changed_only_default": true,
+  "no_dir_update_default": true,
+  "sync_mode": "hierarchy"
+}

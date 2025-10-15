@@ -1,0 +1,25 @@
+{
+  "parent_url": "https://www.notion.so/explaza/Palma-263b133701be8088a184d31e9cccb008",
+  "ignore_patterns": [
+    "**/__pycache__",
+    "**/__pycache__/**",
+    "**/*.drawio.md"
+  ],
+  "probe": {
+    "config_path": "/Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_mode/.c2n/config.json",
+    "config_mtime": 1759170546,
+    "ignore_path": "/Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_mode/.c2n_ignore",
+    "ignore_mtime": 1759170526,
+    "index_path": "/Users/daisukemiyata/aipm_v3/Stock/programs/Tools/projects/cursor_to_notion/test_hierarchy_mode/.c2n/index.yaml",
+    "index_mtime": 1759170526,
+    "env_chain": [
+      {
+        "path": "/Users/daisukemiyata/aipm_v3/.env",
+        "mtime": 1759117438
+      }
+    ]
+  },
+  "last_prog_total": 3,
+  "dir_snapshot": {},
+  "file_snapshot": {}
+}

@@ -1,0 +1,8 @@
+notion-client>=2.2.1
+PyYAML>=6.0
+
+
+
+
+
+
