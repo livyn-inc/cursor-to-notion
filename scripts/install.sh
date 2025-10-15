@@ -32,9 +32,9 @@ log_error() {
 
 # スクリプトのディレクトリを取得
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="$(dirname "$(dirname "$(dirname "$SCRIPT_DIR")")")"
-VENV_DIR="$PROJECT_ROOT/venv"
-C2N_PY="$SCRIPT_DIR/c2n.py"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+VENV_DIR="$PROJECT_ROOT/.venv"
+NIT_CLI_PY="$PROJECT_ROOT/src/nit_cli.py"
 
 echo "=========================================="
 echo "c2n (cursor_to_notion) インストーラー"
@@ -74,7 +74,7 @@ fi
 log_info "依存関係をインストール中..."
 source "$VENV_DIR/bin/activate"
 pip install --upgrade pip
-REQUIREMENTS_FILE="$SCRIPT_DIR/requirements.txt"
+REQUIREMENTS_FILE="$PROJECT_ROOT/requirements.txt"
 if [ -f "$REQUIREMENTS_FILE" ]; then
     pip install -r "$REQUIREMENTS_FILE"
 else
@@ -84,13 +84,13 @@ fi
 
 log_success "依存関係のインストール完了"
 
-# 4. c2n.pyの存在確認
-if [ ! -f "$C2N_PY" ]; then
-    log_error "c2n.py が見つかりません: $C2N_PY"
+# 4. nit_cli.pyの存在確認
+if [ ! -f "$NIT_CLI_PY" ]; then
+    log_error "nit_cli.py が見つかりません: $NIT_CLI_PY"
     exit 1
 fi
 
-log_success "c2n.py を確認: $C2N_PY"
+log_success "nit_cli.py を確認: $NIT_CLI_PY"
 
 # 5. エイリアス設定
 log_info "nitエイリアスを設定中..."
@@ -107,7 +107,7 @@ else
 fi
 
 # エイリアス定義
-NIT_ALIAS="alias nit=\"source $VENV_DIR/bin/activate && python $C2N_PY\""
+NIT_ALIAS="alias nit=\"source $VENV_DIR/bin/activate && python $NIT_CLI_PY\""
 
 # 既存のnitエイリアスをチェック
 if grep -q "alias nit=" "$SHELL_CONFIG" 2>/dev/null; then
@@ -152,10 +152,11 @@ log_success "インストール完了！"
 echo "=========================================="
 echo ""
 echo "使用方法:"
-echo "  nit init /path/to/folder     # プロジェクト初期化"
-echo "  nit push /path/to/folder     # Notionに同期"
-echo "  nit pull /path/to/folder --full  # Notionから取得"
-echo "  nit status /path/to/folder    # 状態確認"
+echo "  nit clone <notion_url> <folder>  # Notionページをクローン"
+echo "  nit init <folder>                # 既存フォルダを初期化"
+echo "  nit push <folder>                # Notionに同期"
+echo "  nit pull <folder>                # Notionから取得"
+echo "  nit status <folder>              # 状態確認"
 echo ""
 echo "注意:"
 echo "  - 新しいターミナルセッションでnitコマンドが利用可能になります"
@@ -163,7 +164,7 @@ echo "  - または 'source $SHELL_CONFIG' で即座に有効化できます"
 echo ""
 echo "設定ファイル:"
 echo "  - 仮想環境: $VENV_DIR"
-echo "  - c2n.py: $C2N_PY"
+echo "  - nit_cli.py: $NIT_CLI_PY"
 echo "  - シェル設定: $SHELL_CONFIG"
 echo ""
 
