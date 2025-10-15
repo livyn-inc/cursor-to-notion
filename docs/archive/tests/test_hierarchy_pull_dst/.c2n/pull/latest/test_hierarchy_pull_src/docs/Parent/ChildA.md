@@ -1,3 +1,0 @@
-# ChildA
-
-# ChildA

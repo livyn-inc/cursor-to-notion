@@ -1,2 +1,100 @@
-# Python cache directories
+# ============================================================
+# cursor_to_notion .gitignore
+# ============================================================
+
+# ----
+# Python関連
+# ----
 __pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ----
+# 仮想環境
+# ----
+.venv/
+venv/
+venv_*/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+
+# ----
+# プロジェクト固有の設定ファイル（機密情報含む）
+# ----
+config.json
+.c2n/config.json
+**/.c2n/config.json
+
+# キャッシュファイル
+.c2n/.cache.json
+**/.c2n/.cache.json
+
+# インデックスファイル（プロジェクト固有）
+.c2n/index.yaml
+**/.c2n/index.yaml
+
+# ----
+# 開発・テスト用ファイル
+# ----
+# ドキュメントアーカイブ（開発履歴）
+docs/archive/
+
+# テストデータ
+docs/tests/
+test_*/
+
+# 一時的なテストフォルダ
+docs/archive/tests/
+
+# ----
+# Node.js関連（メディアアップロード用）
+# ----
+node_modules/
+package-lock.json
+
+# ----
+# エディタ・IDE
+# ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ----
+# ログファイル
+# ----
+*.log
+logs/
+
+# ----
+# その他
+# ----
+# Playwrightの認証情報
+.auth/
+auth.json
+
+# スクリーンショット
+*.png
+debug-*.png
+screenshot-*.png
+
+# バックアップファイル
+*.backup
+*.bak
+*.old
+
+# 統合テストの一時ディレクトリ
+documents/11_QA実行/integration_tests/v2.1/*/test_*/
+documents/11_QA実行/integration_tests/v2.1/ux_verification/test_walkthrough_*/
+
+# ----
+# サンプル設定ファイルは残す
+# ----
+!config_sample.json
