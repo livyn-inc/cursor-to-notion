@@ -1,4 +1,4 @@
-# cursor_to_notion (nit) - Notion ⇄ Markdown 双方向同期ツール v2.1 🚧 BETA
+# Nit - Notion ⇄ Markdown 双方向同期ツール v2.1 🚧 BETA
 
 > ⚠️ **【重要】このツールはベータ版です**
 > 
