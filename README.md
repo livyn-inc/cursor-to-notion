@@ -310,17 +310,32 @@ pip install -r requirements.txt
 1. `<対象プロジェクト>/.c2n/.env`（最優先）
 2. `<対象プロジェクト>/.env`
 3. `cursor_to_notion/` ツール直下の `.env`
+#### `.env` ファイルサンプル
+
+プロジェクトルートまたは `.c2n/` ディレクトリに以下のファイルを作成してください：
 
 ```bash
-# .env ファイルの例
-NOTION_TOKEN=secret_xxxxxxxxxxxxx
-# または
-NOTION_API_KEY=secret_xxxxxxxxxxxxx
+# .env
+# ==========================================
+# Nit - Notion API 設定ファイル
+# ==========================================
+
+# 必須: Notion Integration トークン
+# Notionで Integration を作成し、トークンを取得してください
+# https://www.notion.so/my-integrations
+NOTION_TOKEN=secret_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# オプション: ワークスペースのデフォルトURL
+# 新規プロジェクト作成時のデフォルト親ページ
+WORKSPACE_URL=https://www.notion.so/my-workspace/parent-page-abc123
+
 ```
 
 **手動設定（環境変数）**:
 ```bash
-export NOTION_TOKEN="your_notion_api_key_here"
+# シェルで直接設定する場合
+export NOTION_TOKEN="secret_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+export WORKSPACE_URL="https://www.notion.so/my-workspace/parent-page-abc123"
 ```
 
 ## 📋 コマンドリファレンス
