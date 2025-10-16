@@ -292,8 +292,8 @@ nit push .  # 自分の変更をNotionに反映
 ### 1. 自動インストール（推奨）
 
 ```bash
-chmod +x scripts/install.sh
-./scripts/install.sh
+chmod +x install.sh
+./install.sh
 ```
 
 ### 2. 手動セットアップ
@@ -694,7 +694,7 @@ Error: NOTION_TOKEN が設定されていません
 alias nit
 
 # なければ再設定
-./scripts/install.sh
+./install.sh
 
 # または手動で設定
 alias nit='python /path/to/cursor_to_notion/dev/src/nit_cli.py'
